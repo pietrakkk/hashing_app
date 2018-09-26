@@ -6,9 +6,10 @@ read_dotenv()
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEBUG')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='localhost').split(',')
 
-ALLOWED_HOSTS = ['localhost']
+
+DEBUG = False
 
 INSTALLED_APPS = [
     'django.contrib.admin',

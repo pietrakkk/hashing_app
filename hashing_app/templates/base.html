@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    {#<link rel="stylesheet" type="text/css" href="{%static 'css/main.css'%}">#}
+
+    <title>Hashing url</title>
+</head>
+<body>
+<div class="page-header">
+    <h2 class="text-center">Hash URL</h2>
+</div>
+
+<div class="content container">
+
+    <div class="row">
+        <div class="col-md-12">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
